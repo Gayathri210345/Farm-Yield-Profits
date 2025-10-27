@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Yield Profits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Farm Yield Profits</h1>
+
+    <form action="database.php" method="post">
+        <label for="sno">S.No:</label>
+        <input type="number" id="sno" name="sno" required><br>
+
+        <label for="product">Product:</label>
+        <select id="product" name="product">
+            <option value="Coffee">Coffee</option>
+            <option value="Tea">Tea</option>
+            <option value="Wheat">Wheat</option>
+            <option value="Corn">Corn</option>
+        </select><br>
+
+        <label for="land">Land:</label>
+        <input type="text" id="land" name="land" required><br>
+
+        <label for="ton">Ton:</label>
+        <input type="number" id="ton" name="ton" required><br>
+
+        <label for="money_spend">Money Spend:</label>
+        <input type="number" id="money_spend" name="money_spend" required><br>
+
+        <label for="money_earned_from_the_yield">Money Earned from the Yield:</label>
+        <input type="number" id="money_earned_from_the_yield" name="money_earned_from_the_yield" required><br>
+
+        <div class="btn-container">
+            <button type="submit" name="action" value="insert">Insert</button>
+            <button type="submit" name="action" value="delete">Delete</button>
+            <button type="submit" name="action" value="update">Update</button>
+            <button type="submit" name="action" value="show_db">Show DB</button>
+            <button type="submit" name="action" value="select">Select</button>
+        </div>
+    </form>
+</body>
+</html>
